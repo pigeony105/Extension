@@ -80,18 +80,18 @@ def start(word, indexes, display, limbs, userWon, userLost, guessedLetters):
             for i in range(len(word)): 
                 if(word[i] == user_guessed): 
                     if i in indexes: 
-                        print("You already guessed the letter ", word[i])
+                        print("You already guessed the letter", word[i])
                         chance = True
                         word_found = True
                         break
                     else:
                         indexes.append(i)
-                        print("Nice guess it was ", word[i])
+                        print("Nice guess it was", word[i])
                         word_found = True
         elif len(user_guessed) > 1: 
             if(word == user_guessed):
                 print("Nice, you won! There is no prize.")
-                print("The correct word was ", word)
+                print("The correct word was", word)
                 userWon = True
             else:
                 wrong_guess = True
